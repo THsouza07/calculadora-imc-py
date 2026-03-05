@@ -1,5 +1,5 @@
 def calculadora_imc():
-    print("--- Calculadora de IMC: Saúde e Python ---")
+    print("--- IMC CALCULATOR: ---")
     
     while True:
         print("\nMenu:")
@@ -14,7 +14,7 @@ def calculadora_imc():
         
         if escolha == '1':
             try:
-                # Entrada de dados
+              
                 peso = float(input("Digite seu peso (kg): "))
                 altura = float(input("Digite sua altura (m): "))
 
@@ -22,12 +22,12 @@ def calculadora_imc():
                     print("Erro: A altura deve ser maior que zero.")
                     continue
 
-                # Cálculo do IMC
+                
                 imc = peso / (altura ** 2)
                 
                 print(f"\nSeu IMC é: {imc:.2f}")
 
-                # Estrutura Condicional para Classificação
+                
                 if imc < 18.5:
                     classificacao = "Abaixo do peso"
                 elif 18.5 <= imc < 25:
@@ -48,5 +48,6 @@ def calculadora_imc():
         else:
             print("Opção inválida!")
 
-# Execução
+
+
 calculadora_imc()
