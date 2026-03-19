@@ -14,7 +14,8 @@ def calculadora_imc():
         
         if escolha == '1':
             try:
-              
+                nome = str(input("Digite seu nome: "))
+                 print("Seja bem-vindo ",nome )
                 peso = float(input("Digite seu peso (kg): "))
                 altura = float(input("Digite sua altura (m): "))
 
